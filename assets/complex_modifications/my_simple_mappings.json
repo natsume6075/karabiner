@@ -1,0 +1,115 @@
+{
+  "title": "my_simple_mappings",
+  "rules": [
+    {
+      "description": "[2] @->' `->\" '->` \"->@",
+      "manipulators": [
+        { "type": "basic",
+          "from": {
+            "key_code": "open_bracket"
+          },
+          "to": [
+            {
+              "key_code": "7",
+              "modifiers": ["shift"]
+            }
+          ]
+        },
+        { "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "2",
+              "modifiers": ["shift"]
+            }
+          ]
+        },
+        { "type": "basic",
+          "from": {
+            "key_code": "7",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": ["shift"]
+            }
+          ]
+        },
+        { "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "[2] ;->; +;->: :->+ +:->*",
+      "manipulators": [
+        { "type": "basic",
+          "from": {
+            "key_code": "semicolon"
+          },
+          "to": [
+            {
+              "key_code": "semicolon"
+            }
+          ]
+        },
+        { "type": "basic",
+          "from": {
+            "key_code": "semicolon",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote"
+            }
+          ]
+        },
+        { "type": "basic",
+          "from": {
+            "key_code": "quote"
+          },
+          "to": [
+            {
+              "key_code": "semicolon",
+              "modifiers": ["shift"]
+            }
+          ]
+        },
+        { "type": "basic",
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "quote",
+              "modifiers": ["shift"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
