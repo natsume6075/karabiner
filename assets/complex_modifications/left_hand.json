@@ -1,0 +1,40 @@
+{
+  "title": "left_hand",
+  "rules": [
+    {
+      "description": "[3] fn->com+del, right_com->ctrl+1(tag:red)",
+      "manipulators": [
+        { "type": "basic",
+          "from": {
+            "key_code": "fn"
+          },
+          "to": [
+            {
+              "key_code": "delete_or_backspace",
+              "modifiers": ["command"]
+            }
+          ]
+        },
+        { "type": "basic",
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "hold_down_milliseconds": 500
+            },
+            {
+              "key_code": "1",
+              "modifiers": ["control"],
+              "hold_down_milliseconds": 200
+            },
+            {
+              "key_code": "spacebar"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
